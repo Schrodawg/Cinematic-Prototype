@@ -1,3 +1,21 @@
+///SCENE 0
+class Initial extends Phaser.Scene {
+    constructor() {
+        super('Initial');
+    }
+    preload(){
+        this.load.path = './assets/';
+        this.load.audio('intro', ['intro.wav']);
+    }
+    create() {
+        const startButton = this.add.text(400, 300, 'Begin?', { fill: '#ffffff' })
+          .setInteractive()
+          .on('pointerdown', () => {
+            this.scene.start('Intro')
+        })   
+      }
+    }
+
 ///SCENE 1
 class Intro extends Phaser.Scene {
     constructor() {
@@ -371,7 +389,7 @@ let config = {
     width: 800,
     height: 600,
     backgroundColor: 0x000000,
-    scene: [Intro, PreRoll, PreRoll2, Menu],
+    scene: [Initial, Intro, PreRoll, PreRoll2, Menu],
     audio: {
         disableWebAudio: true
     }
