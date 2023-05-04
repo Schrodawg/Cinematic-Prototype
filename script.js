@@ -382,16 +382,17 @@ class Menu extends Phaser.Scene {
 }
 
 
-
-let config = {
-    type: Phaser.WEBGL,
-    autoCenter: true,
-    width: 800,
-    height: 600,
-    backgroundColor: 0x000000,
-    scene: [Initial, Intro, PreRoll, PreRoll2, Menu],
-    audio: {
-        disableWebAudio: true
+window.onload = function(){
+    let config = {
+        type: Phaser.WEBGL,
+        autoCenter: true,
+        width: 800,
+        height: 600,
+        backgroundColor: 0x000000,
+        scene: [Initial, Intro, PreRoll, PreRoll2, Menu],
+        audio: {
+            disableWebAudio: true
+        }
     }
+    let game = new Phaser.Game(config);
 }
-let game = new Phaser.Game(config);
