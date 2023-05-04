@@ -84,7 +84,7 @@ class Intro extends Phaser.Scene {
         // fade to black
         this.input.keyboard.once('keydown-SPACE', () => {
             this.cameras.main.fadeOut(1000, 0, 0, 0);
-            this.intro.stop();
+            intro.stop();
         })
     
         this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam, effect) => {
