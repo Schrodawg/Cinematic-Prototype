@@ -8,7 +8,7 @@ class Initial extends Phaser.Scene {
         this.load.audio('intro', ['intro.wav']);
     }
     create() {
-        const startButton = this.add.text(400, 300, 'Begin?', { fill: '#ffffff' })
+        const startButton = this.add.text(400, 300, 'Click Here?', { fill: '#ffffff' })
           .setInteractive()
           .on('pointerdown', () => {
             this.scene.start('Intro')
