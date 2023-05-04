@@ -11,7 +11,11 @@ class Intro extends Phaser.Scene {
     create(){      
 
         ///Snare Drumroll Intro
-        (this.intro = this.sound.add('intro')).play();
+        let intro = this.sound.add('intro',
+        {
+            delay: 1
+        });
+        intro.play();
         ///Logo
         this.imageObject = this.add.image( 
             400,
