@@ -15,3 +15,5 @@
 1+ fading animation: All of my scene transistions feature a fade-to-black scene transistion, the code of which I learned from here (https://blog.ourcade.co/posts/2020/phaser-3-fade-out-scene-transition/).
 
 1+ object motion animation: The paper airplane features linear animation as it passes by the screen in scene 2 and 3.
+
+NOTE! Due to Chrome AutoPlay the Intro DrumRoll may not play off the bat.

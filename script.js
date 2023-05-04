@@ -14,6 +14,7 @@ class Initial extends Phaser.Scene {
             this.scene.start('Intro')
         })   
       }
+    update(){}
     }
 
 ///SCENE 1
